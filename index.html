@@ -17,24 +17,36 @@
       </header>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="symbolSelect" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Select the types of symbols that will be in your password.</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
+              <div class="form-check lower">
+                <input class="form-check-input" type="checkbox" value=1 id="lowercaseCheckbox">
+                <label class="form-check-label" for="lowercaseCheckbox">
+                  Lowercase Letters
                 </label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-                <label class="form-check-label" for="flexCheckChecked">
-                  Checked checkbox
+              <div class="form-check upper">
+                <input class="form-check-input" type="checkbox" value=1 id="uppercaseCheckbox" >
+                <label class="form-check-label" for="uppercaseCheckbox">
+                  Uppercase Letters
+                </label>
+              </div>
+              <div class="form-check digits">
+                <input class="form-check-input" type="checkbox" value=1 id="digitsCheckbox" >
+                <label class="form-check-label" for="digitsCheckbox">
+                  Digits
+                </label>
+              </div>
+              <div class="form-check specials">
+                <input class="form-check-input" type="checkbox" value=1 id="specialsCheckbox" >
+                <label class="form-check-label" for="specialsCheckbox">
+                  Special Symbols
                 </label>
               </div>
             </div>
