@@ -6,12 +6,6 @@ var digitCheck = document.querySelector("#digitsCheckbox");
 var specialCheck = document.querySelector("#specialsCheckbox");
 var saveButton = document.querySelector("#saveButton");
 
-//These strings contain all the necessary characters for passwords
-var lowercaseLetters = 'qwertyuiopasdfghjklzxcvbnm';
-var uppercaseLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM';
-var specials = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-var digits = "0123456789";
-
 var passwordLength = 0;
 
 // Write password to the #password input
@@ -87,7 +81,6 @@ function randomCharSelect(){
          break;
       default:
          console.log("something weird happened");
-         randomCharSelect();
          break;
    }
 }
