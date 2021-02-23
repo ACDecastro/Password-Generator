@@ -30,6 +30,7 @@ function writePassword() {
    $('#symbolSelect').modal('show');
 }
 
+//Verifies that the input is only made up of numbers
 function allnumeric(inputtxt){ //This function taken from https://www.w3resource.com/javascript/form/all-numbers.php
       var numbers = /^[0-9]+$/;
       if(inputtxt.match(numbers))
@@ -101,7 +102,6 @@ function generatePassword(){
    var newPassword = "";
    for(var i = 0; i<passwordLength; i++){
       var symbolString = ""+randomCharSelect();
-      console.log("symbolString: "+symbolString);
       //Selects a random character from the chosen "symbolString" type of character
       var symbolChar = symbolString[(Math.floor(Math.random()*(symbolString.length)))];
       newPassword = newPassword + symbolChar;
