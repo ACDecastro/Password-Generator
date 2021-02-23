@@ -55,38 +55,39 @@ function randomCharSelect(){
     switch(type){
       case 0: 
          if(document.getElementById("lowercaseCheckbox").value==-1){
-            return lowercaseLetters;
+            return 'qwertyuiopasdfghjklzxcvbnm';
          }
          else{
-            randomCharSelect();
+            return randomCharSelect();
          }
          break;
       case 1: 
          if(document.getElementById("uppercaseCheckbox").value==-1){
-            return uppercaseLetters;
+            return 'QWERTYUIOPASDFGHJKLZXCVBNM';
          }
          else{
-            randomCharSelect();
+            return randomCharSelect();
          }
          break;
       case 2: 
          if(document.getElementById("specialsCheckbox").value==-1){
-            return specials;
+            return " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
          }
          else{
-            randomCharSelect();
+            return randomCharSelect();
          }
          break;
       case 3: 
          if(document.getElementById("digitsCheckbox").value==-1){
-            return digits;
+            return "1234567890";
          }
          else{
-            randomCharSelect();
+            return randomCharSelect();
          }
          break;
       default:
          console.log("something weird happened");
+         randomCharSelect();
          break;
    }
 }
@@ -107,8 +108,9 @@ function generatePassword(){
    var newPassword = "";
    for(var i = 0; i<passwordLength; i++){
       var symbolString = ""+randomCharSelect();
+      console.log("symbolString: "+symbolString);
       //Selects a random character from the chosen "symbolString" type of character
-      var symbolChar = symbolString[(Math.floor(Math.random()*(symbolString.length-1)))];
+      var symbolChar = symbolString[(Math.floor(Math.random()*(symbolString.length)))];
       newPassword = newPassword + symbolChar;
    }
    var passwordText = document.querySelector("#password");
