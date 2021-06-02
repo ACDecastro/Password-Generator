@@ -35,6 +35,9 @@ You password will also be displayed in the text field to make it easier to selec
 
 ![PasswordTextbox](./Images/image5.png)
 
+## Contributors
+Antonio Decastro
+
 # Contact
 Contact me on LinkedIn or Github
 - https://www.linkedin.com/in/antonio-decastro-58090915a/
