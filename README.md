@@ -34,3 +34,8 @@ Click "Save Changes" to generate a password using the criteria you provided. The
 You password will also be displayed in the text field to make it easier to select and copy.
 
 ![PasswordTextbox](./Images/image5.png)
+
+# Contact
+Contact me on LinkedIn or Github
+- https://www.linkedin.com/in/antonio-decastro-58090915a/
+- https://github.com/ACDecastro/
