@@ -9,10 +9,10 @@ Simply go to https://acdecastro.github.io/Password-Generator/ .
 The code for this project can be viewed at https://github.com/ACDecastro/Password-Generator/ .
 
 ## Technologies Used
-> Javascript
-> HTML
-> Bootstrap
-> JQuery
+- Javascript
+- HTML
+- Bootstrap
+- JQuery
 
 ## Usage
 After opening the webpage, click on the "Generate Password" button.
